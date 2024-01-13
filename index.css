@@ -1,0 +1,141 @@
+body, div,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+   background:linear-gradient(to right,rgb(41, 39, 39),black,rgb(41, 39, 39));
+    
+}
+#outer{
+
+height:70vh;
+width:50%;
+
+display:flex;
+
+justify-content:center;
+margin-top:40px;
+margin-left:27%;
+}
+.row{
+    width:33%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    margin: 2px 2px 2px 2px;
+
+    
+ 
+}
+.inner{
+    border:2px solid black;
+    width:70%;
+    height:70%;
+    background:linear-gradient(to right,rgb(39, 37, 37),#424040,#888282);
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    box-shadow: 0 0  1rem yellow;
+    font-size: 60px;   
+    color:yellow;
+
+}
+#reset{
+    background:linear-gradient(to right,rgb(16, 16, 16),rgb(91, 85, 85),rgb(21, 20, 20));
+    color:yellow;
+    border: 2px solid yellow;
+    border-radius: 13%;
+    width:80px;
+    height:40px;
+    margin-left: 50%;
+    margin-top: 20px;
+    
+    
+}
+#reset:hover{
+    box-shadow: 0 0  1rem yellow;
+    font-display: inherit;
+    width:90px;
+    height:50px;
+   
+}
+.inner:hover{
+    width:68%;
+    height:68%;
+
+}
+#newgame{
+    background:linear-gradient(to right,rgb(16, 16, 16),rgb(91, 85, 85),rgb(21, 20, 20));
+    color:yellow;
+    border-radius: 6%;
+    border:1px solid yellow;
+    margin-left: 48%;
+    margin-top: 20px;
+    width:100px;
+    height:40px;
+}
+#newgame:hover{
+    
+    height:50px;
+    width:110px;
+    box-shadow: 0 0  1rem yellow;
+}
+.winner{
+    background:linear-gradient(to right,rgb(16, 16, 16),rgb(91, 85, 85),rgb(21, 20, 20));
+    color:white;
+    width:200px;
+    height:50px;
+    text-align: center;
+    margin-left: 45%;
+    border:2px solid black;
+    border-radius: 8%;
+    margin-top: 10px;
+    animation-name: my-animation;
+    animation-duration:2s; 
+   animation-iteration-count: infinite;
+   animation-direction:alternate-reverse;
+   box-shadow: yellow;
+   border: 3px solid yellow;
+   font-size: larger;
+   font-weight: 200;
+   
+}
+      
+      @keyframes my-animation {
+        from {
+         margin-left:800px;
+        
+         color:yellow
+         
+        }
+        to {
+          
+          margin-left:600px;
+          color:transparent;
+         
+     
+          
+        }
+    }
+.hide{
+    display:none;
+}
+   
+@media only screen and (max-width: 768px) {
+    #outer {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #reset,
+    #newgame {
+        margin-left: 45%;
+    }
+
+    
+}
+
+
